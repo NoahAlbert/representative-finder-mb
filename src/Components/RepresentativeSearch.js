@@ -30,7 +30,7 @@ function RepresentativeSearch() {
             />
             <div>
                 <button
-                    className="search-btn"
+                    className="submit-btn"
                     onClick={() => searchRepresentatives()}
                 >
                     Submit

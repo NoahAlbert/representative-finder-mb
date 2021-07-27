@@ -1,6 +1,6 @@
 function Footer() {
     return(
-        <p className="footer">Made with love by Michelle Bakels</p>
+        <p className="footer">Noah Albert 2021</p>
     )
 }
 

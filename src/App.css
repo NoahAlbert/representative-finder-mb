@@ -1,25 +1,46 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+:root{
+  --ogRed: #b22234;
+  --ogBlue: #3c3b6e;
+}
+
 .header {
-  margin-left: 24px;
+  padding: 24px;
+  background-color: var(--ogRed);
 }
 
 .footer {
+  padding: 12px;
   text-align: center;
+  background-color: var(--ogBlue);
+  color: white;
 }
 
 .search-container {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .search-bar {
+  margin: 24px;
   width: 750px;
   height: 50px;
   font-size: 32px;
 }
 
-.search-btn {
+.submit-btn {
   margin: 24px 0;
   color: white;
-  background: black;
+  background: var(--ogBlue);
   padding: 12px 24px;
   font-size: 16px;
   border-style: none;
@@ -32,4 +53,36 @@
 .office-title{
   font-weight: bold;
   text-transform: uppercase;
+}
+
+ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+}
+
+.menu-item a{
+  color: white;
+  font-size: 26px;
+  margin-right: 24px;
+  text-decoration: none;
+}
+
+.form-container{
+  display: flex;
+  justify-content: space-around;
+  padding: 24px;
+}
+
+.form-label{
+  font-size: 24px;
+  margin: 8px;
+  float: right;
+}
+.form-input {
+  height: 42px;
+  min-width: 250px;
+  font-size: 24px;
+  margin: 8px;
 }
