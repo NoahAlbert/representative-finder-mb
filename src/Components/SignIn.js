@@ -6,6 +6,7 @@ import {firebaseConfig} from '../config'
 function SignIn({ setUser }){
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+    const [loading, setLoading] = useState(false)
 
     const signInUser = (e) => {
         e.preventDefault()
