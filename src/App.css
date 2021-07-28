@@ -11,9 +11,21 @@
   --ogBlue: #3c3b6e;
 }
 
+.app{
+  height: 100vh;
+}
+
 .header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+
   padding: 24px;
   background-color: var(--ogRed);
+}
+
+.header-title{
+  font-weight: 700;
 }
 
 .footer {
@@ -28,13 +40,16 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  margin: 24px;
 }
 
 .search-bar {
-  margin: 24px;
   width: 750px;
   height: 50px;
   font-size: 32px;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: #ed563c
 }
 
 .submit-btn {
@@ -85,4 +100,43 @@ ul{
   min-width: 250px;
   font-size: 24px;
   margin: 8px;
+}
+
+.landing-container{
+  background-image: url('./images/flag-waving.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.625);
+  background-blend-mode: overlay;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.landing-header{
+  color:white;
+  font-size: 100px;
+}
+
+.landing-subheader{
+  color:white;
+  font-size: 32px;
+}
+
+.cta{
+  margin: 24px 0;
+  background: var(--ogBlue);
+  padding: 12px 24px;
+  font-size: 16px;
+}
+
+.cta a{
+  color:white;
+  text-decoration: none;
 }
